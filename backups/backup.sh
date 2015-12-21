@@ -1,0 +1,1 @@
+mysqldump --all-databases --single-transaction --user=root -p'__rootpass__' > /tmp/all-databases.bak && tar -cvzf /opt/backups/bkup-$(date +%Y-%m-%d).tar.gz /etc/ /var/ /home/ /root/ /tmp/ && scp -i <remote-host privkey> /opt/backups/* backupper@remote-host:/opt/bkup && rm /opt/backups/* /tmp/*
