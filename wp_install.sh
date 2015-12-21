@@ -62,6 +62,6 @@ service apache2 reload
 
 ## removes the password used to do an unattended install of mysql-server
 echo PURGE | debconf-communicate mysql-server
-
+#
 ## browse to this URL to configure the wordpress install
 echo "browse to the url /wp-admin/install.php to configure wordpress"
