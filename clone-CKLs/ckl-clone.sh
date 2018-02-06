@@ -1,5 +1,5 @@
 if [ $# -eq 0 ]; then
-    echo "Script requires two arguments: ./duplicate.sh <comps> <golden>"
+    echo "Script requires two arguments: ./clone-ckls.sh <comps> <golden>"
     echo "   <comps> is a list of hostnames"
     echo "   <golden> is a folder containing the files"
     exit 1
