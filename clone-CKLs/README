@@ -1,3 +1,7 @@
 Clones DISA STIG Windows 7 workstation CKLs. To be used once a 10% baseline has been created and checked for consistency.
 
-Known issue: At some part of the CKL/HTML/XML files there is a string that is set to the last 6 characters of a machine's hostname. This will result in all machines having the same string in their benchmark files.
+Known issue: At some part of the CKL/HTML/XML files there is a string that is set to the last 6 characters of a machine's hostname. This will result in all machines having the same string in their benchmark files. I also did not add in support for IP addresses, MAC addresses, etc. This script assumes the only thing set for each host is the hostname.
+
+Usage: Find a host that is closest to the organization's baseline. This host's CKLs/XMLs/etc. will be in the <golden> folder, where <golden> is the hostname of the machine to be cloned. Use hostname only, not FQDN. <comps> is a list of hosts in your organization that need to be cloned.
+
+Run the script like this: "./clone-ckls.sh <list of hosts> <hostname of known good host>"
