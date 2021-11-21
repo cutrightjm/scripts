@@ -1,1 +1,0 @@
-This script is NOT to be used in production environments without testing first. I wrote being neither a regular PowerShell / PowerCLI user, and I am also not an ESXi administrator. Use this script at your own risk and test on a cloned machine first.
